@@ -1,0 +1,31 @@
+// Підключаємо лише потрібні частини Bootstrap (а не весь bootstrap.scss)
+@import 'bootstrap/scss/functions';
+
+// Свої змінні — ДО імпорту variables
+$primary: #36a9dc;
+$body-bg: #f4f4f4;
+$enable-shadows: false;
+
+@import 'bootstrap/scss/variables';
+@import 'bootstrap/scss/variables-dark';
+@import 'bootstrap/scss/maps';
+@import 'bootstrap/scss/mixins';
+@import 'bootstrap/scss/utilities';
+
+@import 'bootstrap/scss/root';
+@import 'bootstrap/scss/reboot';
+@import 'bootstrap/scss/type';
+@import 'bootstrap/scss/containers';
+@import 'bootstrap/scss/tables';
+@import 'bootstrap/scss/forms';
+@import 'bootstrap/scss/buttons';
+@import 'bootstrap/scss/transitions';
+@import 'bootstrap/scss/close';
+@import 'bootstrap/scss/card';
+@import 'bootstrap/scss/badge';
+@import 'bootstrap/scss/modal';
+@import 'bootstrap/scss/helpers';
+
+@import 'bootstrap/scss/utilities/api'; // завжди останнім
+
+.btn-primary { --bs-btn-color: #fff; --bs-btn-hover-color: #fff; --bs-btn-disabled-color: #fff; }
