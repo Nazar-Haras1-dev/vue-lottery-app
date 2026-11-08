@@ -9,7 +9,8 @@
     "preview": "vite preview",
     "build-only": "vite build",
     "type-check": "vue-tsc --build",
-    "lint": "eslint . --fix"
+    "lint": "eslint . --fix",
+    "deploy": "vite build --base=/vue-lottery-app/ && cp dist/index.html dist/404.html && gh-pages -d dist"
   },
   "dependencies": {
     "@vee-validate/yup": "^4.15.1",
