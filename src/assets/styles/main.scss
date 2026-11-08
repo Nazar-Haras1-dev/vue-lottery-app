@@ -3,7 +3,7 @@
 
 // Свої змінні — ДО імпорту variables
 $primary: #36a9dc;
-$body-bg: #f4f4f4;
+$body-bg: #f4f6fb;
 $enable-shadows: false;
 
 @import 'bootstrap/scss/variables';
@@ -16,6 +16,7 @@ $enable-shadows: false;
 @import 'bootstrap/scss/reboot';
 @import 'bootstrap/scss/type';
 @import 'bootstrap/scss/containers';
+@import 'bootstrap/scss/grid';
 @import 'bootstrap/scss/tables';
 @import 'bootstrap/scss/forms';
 @import 'bootstrap/scss/buttons';
@@ -23,6 +24,8 @@ $enable-shadows: false;
 @import 'bootstrap/scss/close';
 @import 'bootstrap/scss/card';
 @import 'bootstrap/scss/badge';
+@import 'bootstrap/scss/alert';
+@import 'bootstrap/scss/pagination';
 @import 'bootstrap/scss/modal';
 @import 'bootstrap/scss/helpers';
 

@@ -1,7 +1,7 @@
-<script setup lang="ts">
+<script setup lang="ts" generic="T extends string | number | undefined">
 import { useId } from 'vue'
 
-defineOptions({ inheritAttrs: false }) // атрибути (placeholder, @blur...) віддаємо на <input>
+defineOptions({ inheritAttrs: false }) // атрибути (placeholder, onBlur...) віддаємо на <input>
 
 defineProps<{
   label: string
@@ -10,7 +10,7 @@ defineProps<{
   error?: string
 }>()
 
-const model = defineModel<string>({ required: true }) // v-model на власному компоненті
+const model = defineModel<T>({ required: true })
 const id = useId()
 </script>
 
